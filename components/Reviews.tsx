@@ -44,14 +44,13 @@ export default function Reviews() {
           </a>
         </div>
 
-        {/* Desktop: masonry grid */}
+        {/* Desktop: clean 2-column grid */}
         <div className="reviews-desktop">
-          <div style={{ columns: '2', columnGap: '1.5px', background: 'var(--cream-dark)', border: '1.5px solid var(--cream-dark)', borderRadius: '4px', overflow: 'hidden' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5px', background: 'var(--cream-dark)', border: '1.5px solid var(--cream-dark)', borderRadius: '4px', overflow: 'hidden' }}>
             {items.map((review, i) => (
-              <div key={review.name} className={`reveal reveal-delay-${(i % 4) + 1}`} style={{
-                breakInside: 'avoid', background: 'var(--white)',
-                padding: '2.25rem', marginBottom: '1.5px',
-                display: 'inline-block', width: '100%',
+              <div key={review.name} className={`reveal reveal-delay-${(i % 2) + 1}`} style={{
+                background: 'var(--white)',
+                padding: '2.25rem',
               }}>
                 <span style={{ fontFamily: 'var(--font-playfair), serif', fontSize: '4.5rem', lineHeight: 0.5, color: 'var(--gold)', opacity: 0.18, display: 'block', marginBottom: '1.25rem' }}>"</span>
                 <p style={{ fontSize: '0.93rem', lineHeight: 1.82, fontWeight: 300, color: 'var(--text)', marginBottom: '1.75rem' }}>
