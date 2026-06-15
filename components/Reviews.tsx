@@ -54,6 +54,28 @@ export default function Reviews() {
             </div>
           ))}
         </div>
+
+        {/* Google CTA */}
+        <div style={{ textAlign: 'center', marginTop: '3rem' }}>
+          <a
+            href="https://maps.google.com/?cid=17744891490161392760"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: '0.75rem',
+              fontFamily: 'var(--font-inter), sans-serif',
+              fontSize: '0.82rem', fontWeight: 500,
+              color: 'var(--green)', textDecoration: 'none',
+              border: '1px solid var(--cream-dark)',
+              padding: '0.85rem 1.75rem', borderRadius: '2px',
+              background: 'var(--white)',
+            }}
+          >
+            <span style={{ color: 'var(--gold)' }}>★★★★★</span>
+            <span>{lang === 'nl' ? 'Bekijk alle 643 reviews op Google' : 'Read all 643 reviews on Google'}</span>
+            <span style={{ color: 'var(--text-muted)' }}>↗</span>
+          </a>
+        </div>
       </div>
 
       <style>{`
