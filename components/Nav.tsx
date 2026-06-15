@@ -7,14 +7,14 @@ const NAV_LINKS = [
   { href: '#services', nl: 'Services', en: 'Services' },
   { href: '#prijzen', nl: 'Prijzen', en: 'Pricing' },
   { href: '#contact', nl: 'Contact', en: 'Contact' },
-]Q
+]
 
 export default function Nav() {
   const [lang, setLang] = useState<'nl' | 'en'>('nl')
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
 
-  useEffect(() => {Q
+  useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
