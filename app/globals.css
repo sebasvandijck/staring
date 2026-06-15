@@ -37,44 +37,60 @@ body {
 
 .reveal {
   opacity: 0;
-  transform: translateY(28px);
-  transition: opacity 0.75s ease, transform 0.75s ease;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
 }
 .reveal.visible { opacity: 1; transform: translateY(0); }
-.reveal-delay-1 { transition-delay: 0.1s; }
-.reveal-delay-2 { transition-delay: 0.2s; }
-.reveal-delay-3 { transition-delay: 0.3s; }
-.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-1 { transition-delay: 0.08s; }
+.reveal-delay-2 { transition-delay: 0.16s; }
+.reveal-delay-3 { transition-delay: 0.24s; }
+.reveal-delay-4 { transition-delay: 0.32s; }
 
 .strip-img:hover { transform: scale(1.04); }
 
-/* Mobile */
-@media (max-width: 700px) {
-  .nav-links { display: none !important; }
-  .nav-cta { display: none !important; }
-  .hamburger { display: flex !important; }
-}
-
+/* ── TABLET (max 900px) ── */
 @media (max-width: 900px) {
-  .hero-content { grid-template-columns: 1fr !important; gap: 2.5rem !important; padding: 0 1.5rem 4rem !important; }
-  .highlights-grid { grid-template-columns: 1fr 1fr !important; }
-  .services-layout { grid-template-columns: 1fr !important; gap: 3rem !important; }
-  .services-image { position: static !important; aspect-ratio: 16/9 !important; }
-  .photo-strip { flex-direction: column !important; height: auto !important; }
-  .photo-strip > div { flex: none !important; height: 55vw; }
-  .contact-grid { grid-template-columns: 1fr !important; }
+  .hero-content {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
 
-  /* Reviews */
+  .highlights-grid { grid-template-columns: 1fr 1fr !important; }
+
   .reviews-desktop { display: none !important; }
   .reviews-mobile { display: block !important; }
 
-  /* Prices */
+  .services-layout {
+    grid-template-columns: 1fr !important;
+    gap: 2.5rem !important;
+  }
+  .services-image {
+    position: static !important;
+    aspect-ratio: 16/10 !important;
+  }
+
+  .photo-strip {
+    flex-direction: column !important;
+    height: auto !important;
+  }
+  .photo-strip > div {
+    flex: none !important;
+    height: 60vw;
+  }
+
   .prices-desktop { display: none !important; }
   .prices-mobile { display: flex !important; }
 
-  section { padding: 4rem 1.25rem !important; }
+  .contact-grid { grid-template-columns: 1fr !important; }
 }
 
-@media (max-width: 500px) {
+/* ── MOBILE (max 600px) ── */
+@media (max-width: 600px) {
+  .nav-links { display: none !important; }
+  .nav-cta { display: none !important; }
+  .hamburger { display: flex !important; }
+
   .highlights-grid { grid-template-columns: 1fr !important; }
+
+  .photo-strip > div { height: 70vw; }
 }
