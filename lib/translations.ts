@@ -48,70 +48,14 @@ export const t = {
     title2: { nl: 'terugkomen', en: 'come back' },
     link: { nl: 'Alle 643 reviews op Google →', en: 'All 643 reviews on Google →' },
     items: [
-      {
-        text: {
-          nl: "Hele lieve, kundige mensen met fantastische service! De vintage lievelingsjas van m'n zoontje heeft weer een prachtige nieuwe rits en kan weer jaren mee.",
-          en: "Lovely, skilled people with fantastic service! My son's vintage favourite jacket has a beautiful new zip and is good for years to come.",
-        },
-        name: 'Els Nadort',
-        initials: 'EN',
-      },
-      {
-        text: {
-          nl: 'Je wordt hier onwijs goed geholpen, of het nu gaat om vermaken, knopen of stomerij. De eigenaren zijn ontzettend vriendelijk en denken echt met je mee. Ik ga nooit meer ergens anders naartoe!',
-          en: "You get incredibly good help here, whether it's alterations, buttons or dry cleaning. The owners are extremely friendly and truly think along with you. I will never go anywhere else!",
-        },
-        name: 'L Andringa',
-        initials: 'LA',
-      },
-      {
-        text: {
-          nl: 'Ik laat al jaren mijn kleding repareren bij deze vriendelijke vakmensen en hoef nooit meer kleding weg te gooien.',
-          en: "I've been having my clothes repaired here for years by these friendly craftspeople and never have to throw clothes away anymore.",
-        },
-        name: 'Sabine Seijerlin',
-        initials: 'SS',
-      },
-      {
-        text: {
-          nl: 'Vandaag geweest met een losse naad in mijn jas, werd gelijk geholpen, hoefde niet te wachten en ook niet te betalen. Wat een vriendelijke mensen, echt een aanrader!',
-          en: 'Came in today with a loose seam in my coat, was helped immediately, did not have to wait or pay. Such friendly people, highly recommended!',
-        },
-        name: 'Linda de Graaff',
-        initials: 'LG',
-      },
-      {
-        text: {
-          nl: 'Al meer dan 4 jaar vaste klant bij Staring en sinds kort maken hun met veel zorg en perfectie kleding voor mijn winkel.',
-          en: 'A loyal customer at Staring for over 4 years and recently they started making clothes for my shop with great care and perfection.',
-        },
-        name: 'Following Lucy',
-        initials: 'FL',
-      },
-      {
-        text: {
-          nl: 'Ik moest lastminute een nieuwe knoop voor m\'n smoking, perfecte kleur en super snel geregeld. Top service!!',
-          en: "I needed a last-minute button for my tuxedo, perfect colour match and arranged super quickly. Top service!!",
-        },
-        name: 'Nigel van der Weerd',
-        initials: 'NW',
-      },
-      {
-        text: {
-          nl: 'Afgelopen december last-moment langs geweest voor het stomen van mijn pak en een jurk voor een bruiloft. Mijn pantalon ook nog vermaakt. Met alles erg tevreden.',
-          en: 'Last December I came in last-minute to have my suit and a dress cleaned for a wedding. Had my trousers altered too. Very satisfied with everything.',
-        },
-        name: 'Bruno B',
-        initials: 'BB',
-      },
-      {
-        text: {
-          nl: 'Vrijdagmiddag binnengekomen met de vraag of op vijf shirtjes lint genaaid kon worden — diezelfde avond klaar. Ongelooflijk snelle service.',
-          en: 'Walked in Friday afternoon asking if ribbon could be sewn on five shirts — done that same evening. Incredibly fast service.',
-        },
-        name: 'Daan Brummelhuis',
-        initials: 'DB',
-      },
+      { text: { nl: "Hele lieve, kundige mensen met fantastische service! De vintage lievelingsjas van m'n zoontje heeft weer een prachtige nieuwe rits en kan weer jaren mee.", en: "Lovely, skilled people with fantastic service! My son's vintage favourite jacket has a beautiful new zip and is good for years to come." }, name: 'Els Nadort', initials: 'EN' },
+      { text: { nl: 'Je wordt hier onwijs goed geholpen, of het nu gaat om vermaken, knopen of stomerij. De eigenaren zijn ontzettend vriendelijk en denken echt met je mee. Ik ga nooit meer ergens anders naartoe!', en: "You get incredibly good help here, whether it's alterations, buttons or dry cleaning. The owners are extremely friendly and truly think along with you. I will never go anywhere else!" }, name: 'L Andringa', initials: 'LA' },
+      { text: { nl: 'Ik laat al jaren mijn kleding repareren bij deze vriendelijke vakmensen en hoef nooit meer kleding weg te gooien.', en: "I've been having my clothes repaired here for years by these friendly craftspeople and never have to throw clothes away anymore." }, name: 'Sabine Seijerlin', initials: 'SS' },
+      { text: { nl: 'Vandaag geweest met een losse naad in mijn jas, werd gelijk geholpen, hoefde niet te wachten en ook niet te betalen. Wat een vriendelijke mensen, echt een aanrader!', en: 'Came in today with a loose seam in my coat, was helped immediately, did not have to wait or pay. Such friendly people, highly recommended!' }, name: 'Linda de Graaff', initials: 'LG' },
+      { text: { nl: 'Al meer dan 4 jaar vaste klant bij Staring en sinds kort maken hun met veel zorg en perfectie kleding voor mijn winkel.', en: 'A loyal customer at Staring for over 4 years and recently they started making clothes for my shop with great care and perfection.' }, name: 'Following Lucy', initials: 'FL' },
+      { text: { nl: "Ik moest lastminute een nieuwe knoop voor m'n smoking, perfecte kleur en super snel geregeld. Top service!!", en: "I needed a last-minute button for my tuxedo, perfect colour match and arranged super quickly. Top service!!" }, name: 'Nigel van der Weerd', initials: 'NW' },
+      { text: { nl: 'Afgelopen december last-moment langs geweest voor het stomen van mijn pak en een jurk voor een bruiloft. Mijn pantalon ook nog vermaakt. Met alles erg tevreden.', en: 'Last December I came in last-minute to have my suit and a dress cleaned for a wedding. Had my trousers altered too. Very satisfied with everything.' }, name: 'Bruno B', initials: 'BB' },
+      { text: { nl: 'Vrijdagmiddag binnengekomen met de vraag of op vijf shirtjes lint genaaid kon worden — diezelfde avond klaar. Ongelooflijk snelle service.', en: 'Walked in Friday afternoon asking if ribbon could be sewn on five shirts — done that same evening. Incredibly fast service.' }, name: 'Daan Brummelhuis', initials: 'DB' },
     ],
   },
   services: {
@@ -119,26 +63,10 @@ export const t = {
     title1: { nl: 'Van stomen tot', en: 'From cleaning to' },
     title2: { nl: 'op maat', en: 'custom fit' },
     items: [
-      {
-        num: '01',
-        name: { nl: 'Stomerij', en: 'Dry Cleaning' },
-        desc: { nl: 'Biologisch & milieuvriendelijk stomen voor kleding, gordijnen, tapijten, banken en hoeden.', en: 'Eco-friendly dry cleaning for clothes, curtains, carpets, sofas and hats.' },
-      },
-      {
-        num: '02',
-        name: { nl: 'Vermaken', en: 'Alterations' },
-        desc: { nl: 'Broeken, jurken, jassen, blouses, trouwjurken, maatpakken — alles wordt perfect gemaakt.', en: 'Trousers, dresses, coats, blouses, wedding gowns, bespoke suits — everything made perfect.' },
-      },
-      {
-        num: '03',
-        name: { nl: 'Reparaties', en: 'Repairs' },
-        desc: { nl: 'Rits vervangen, zoomreparaties, leerreparatie, knopen, borduurwerk en meer.', en: 'Zip replacement, hem repairs, leather repair, buttons, embroidery and more.' },
-      },
-      {
-        num: '04',
-        name: { nl: 'Kleding op maat', en: 'Bespoke Tailoring' },
-        desc: { nl: 'Maatpakken, uniforms en kleding volledig op maat gemaakt naar uw wensen.', en: 'Bespoke suits, uniforms and custom clothing made to your exact wishes.' },
-      },
+      { num: '01', name: { nl: 'Stomerij', en: 'Dry Cleaning' }, desc: { nl: 'Biologisch & milieuvriendelijk stomen voor kleding, gordijnen, tapijten, banken en hoeden.', en: 'Eco-friendly dry cleaning for clothes, curtains, carpets, sofas and hats.' } },
+      { num: '02', name: { nl: 'Vermaken', en: 'Alterations' }, desc: { nl: 'Broeken, jurken, jassen, blouses, trouwjurken, maatpakken — alles wordt perfect gemaakt.', en: 'Trousers, dresses, coats, blouses, wedding gowns, bespoke suits — everything made perfect.' } },
+      { num: '03', name: { nl: 'Reparaties', en: 'Repairs' }, desc: { nl: 'Rits vervangen, zoomreparaties, leerreparatie, knopen, borduurwerk en meer.', en: 'Zip replacement, hem repairs, leather repair, buttons, embroidery and more.' } },
+      { num: '04', name: { nl: 'Kleding op maat', en: 'Bespoke Tailoring' }, desc: { nl: 'Maatpakken, uniforms en kleding volledig op maat gemaakt naar uw wensen.', en: 'Bespoke suits, uniforms and custom clothing made to your exact wishes.' } },
     ],
   },
   prices: {
@@ -147,45 +75,10 @@ export const t = {
     title2: { nl: 'vakwerk', en: 'expert work' },
     note: { nl: 'Alle prijzen zijn vanafprijzen. Definitieve prijs na inspectie.', en: 'All prices are starting prices. Final price after inspection.' },
     categories: [
-      {
-        name: { nl: 'Pantalon / Broek', en: 'Trousers' },
-        items: [
-          { nl: 'Nieuwe rits', en: 'New zip', price: '€ 8,50' },
-          { nl: 'Verkorten met split', en: 'Shorten with split', price: '€ 10,00' },
-          { nl: 'Verkorten / verlengen', en: 'Shorten / lengthen', price: '€ 10,00' },
-          { nl: 'Band innemen', en: 'Take in waistband', price: '€ 10,00' },
-          { nl: 'Taille innemen / wijder', en: 'Adjust waist', price: '€ 10,00' },
-        ],
-      },
-      {
-        name: { nl: 'Colbert / Jas', en: 'Jacket / Coat' },
-        items: [
-          { nl: 'Korter maken zonder voering', en: 'Shorten without lining', price: '€ 12,50' },
-          { nl: 'Mouwen inkorten', en: 'Shorten sleeves', price: '€ 15,00' },
-          { nl: 'Nieuwe voering', en: 'New lining', price: '€ 40,00' },
-          { nl: 'Nieuwe zak per stuk', en: 'New pocket each', price: '€ 10,00' },
-        ],
-      },
-      {
-        name: { nl: 'Stomen', en: 'Dry Cleaning' },
-        items: [
-          { nl: 'Colbert', en: 'Jacket', price: '€ 7,50' },
-          { nl: 'Pantalon', en: 'Trousers', price: '€ 6,00' },
-          { nl: 'Kostuum', en: 'Suit', price: '€ 13,00' },
-          { nl: 'Jurk', en: 'Dress', price: '€ 6,00' },
-          { nl: 'Jas', en: 'Coat', price: '€ 9,00' },
-          { nl: 'Trouwjurk', en: 'Wedding dress', price: '€ 60,00' },
-        ],
-      },
-      {
-        name: { nl: 'Rok / Jurk', en: 'Skirt / Dress' },
-        items: [
-          { nl: 'Nieuwe rits', en: 'New zip', price: '€ 10,00' },
-          { nl: 'Korter maken zonder voering', en: 'Shorten without lining', price: '€ 10,00' },
-          { nl: 'Nieuwe voering', en: 'New lining', price: '€ 20,00' },
-          { nl: 'Taille innemen', en: 'Take in waist', price: '€ 18,00' },
-        ],
-      },
+      { name: { nl: 'Pantalon / Broek', en: 'Trousers' }, items: [ { nl: 'Nieuwe rits', en: 'New zip', price: '€ 8,50' }, { nl: 'Verkorten met split', en: 'Shorten with split', price: '€ 10,00' }, { nl: 'Verkorten / verlengen', en: 'Shorten / lengthen', price: '€ 10,00' }, { nl: 'Band innemen', en: 'Take in waistband', price: '€ 10,00' }, { nl: 'Taille innemen / wijder', en: 'Adjust waist', price: '€ 10,00' } ] },
+      { name: { nl: 'Colbert / Jas', en: 'Jacket / Coat' }, items: [ { nl: 'Korter maken zonder voering', en: 'Shorten without lining', price: '€ 12,50' }, { nl: 'Mouwen inkorten', en: 'Shorten sleeves', price: '€ 15,00' }, { nl: 'Nieuwe voering', en: 'New lining', price: '€ 40,00' }, { nl: 'Nieuwe zak per stuk', en: 'New pocket each', price: '€ 10,00' } ] },
+      { name: { nl: 'Stomen', en: 'Dry Cleaning' }, items: [ { nl: 'Colbert', en: 'Jacket', price: '€ 7,50' }, { nl: 'Pantalon', en: 'Trousers', price: '€ 6,00' }, { nl: 'Kostuum', en: 'Suit', price: '€ 13,00' }, { nl: 'Jurk', en: 'Dress', price: '€ 6,00' }, { nl: 'Jas', en: 'Coat', price: '€ 9,00' }, { nl: 'Trouwjurk', en: 'Wedding dress', price: '€ 60,00' } ] },
+      { name: { nl: 'Rok / Jurk', en: 'Skirt / Dress' }, items: [ { nl: 'Nieuwe rits', en: 'New zip', price: '€ 10,00' }, { nl: 'Korter maken zonder voering', en: 'Shorten without lining', price: '€ 10,00' }, { nl: 'Nieuwe voering', en: 'New lining', price: '€ 20,00' }, { nl: 'Taille innemen', en: 'Take in waist', price: '€ 18,00' } ] },
     ],
   },
   strip: {
@@ -201,24 +94,26 @@ export const t = {
     locations: [
       {
         name: 'Staringplein',
-        address: 'Staringplein 20HS, Amsterdam',
-        phone: '020 775 04 48',
-        tel: '0207750448',
+        address: 'Staringplein 20HS, 1054 VL Amsterdam',
+        phone: '06 466 355 56',
+        tel: '0646635556',
+        whatsapp: '31646635556',
         hours: [
-          { day: { nl: 'Ma – Vr', en: 'Mon – Fri' }, time: '09:00 – 21:00' },
-          { day: { nl: 'Zaterdag', en: 'Saturday' }, time: '09:00 – 19:00' },
-          { day: { nl: 'Zondag', en: 'Sunday' }, time: '09:00 – 19:00' },
+          { day: { nl: 'Ma – Vr', en: 'Mon – Fri' }, time: '09:30 – 19:00' },
+          { day: { nl: 'Zaterdag', en: 'Saturday' }, time: '09:30 – 17:00' },
+          { day: { nl: 'Zondag', en: 'Sunday' }, time: { nl: 'Gesloten', en: 'Closed' } },
         ],
-        maps: 'https://www.google.com/maps/search/Staringplein+20+Amsterdam',
+        maps: 'https://maps.google.com/?cid=17744891490161392760',
       },
       {
         name: 'Binnen Oranjestraat',
-        address: 'Binnen Oranjestraat 18, Amsterdam',
+        address: 'Binnen Oranjestraat 18, 1013 JA Amsterdam',
         phone: '020 337 30 39',
         tel: '0203373039',
+        whatsapp: null,
         hours: [
-          { day: { nl: 'Ma – Vr', en: 'Mon – Fri' }, time: '09:00 – 21:00' },
-          { day: { nl: 'Zaterdag', en: 'Saturday' }, time: '09:00 – 19:00' },
+          { day: { nl: 'Ma – Vr', en: 'Mon – Fri' }, time: '09:30 – 19:00' },
+          { day: { nl: 'Zaterdag', en: 'Saturday' }, time: '09:30 – 17:00' },
           { day: { nl: 'Zondag', en: 'Sunday' }, time: { nl: 'Gesloten', en: 'Closed' } },
         ],
         maps: 'https://www.google.com/maps/search/Binnen+Oranjestraat+18+Amsterdam',

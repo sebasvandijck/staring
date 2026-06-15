@@ -32,7 +32,6 @@ export default function Contact() {
               padding: '3rem 2.75rem',
               borderRight: i === 0 ? '1px solid var(--cream-dark)' : 'none',
             }}>
-              {/* Location name */}
               <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '2rem' }}>
                 <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: 'var(--gold)', display: 'block', flexShrink: 0 }} />
                 <span style={{ fontFamily: 'var(--font-playfair), serif', fontSize: '1.15rem', fontWeight: 400, color: 'var(--green)' }}>
@@ -40,17 +39,14 @@ export default function Contact() {
                 </span>
               </div>
 
-              {/* Address */}
               <div style={{ fontSize: '0.85rem', color: 'var(--text-muted)', fontWeight: 300, marginBottom: '0.5rem' }}>
                 {loc.address}
               </div>
 
-              {/* Phone */}
               <a href={`tel:${loc.tel}`} style={{ fontSize: '1.1rem', fontWeight: 500, color: 'var(--green)', textDecoration: 'none', display: 'block', marginBottom: '2rem', fontFamily: 'var(--font-playfair), serif' }}>
                 {loc.phone}
               </a>
 
-              {/* Hours */}
               <div style={{ marginBottom: '2rem' }}>
                 <div style={{ fontSize: '0.65rem', letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--gold)', fontWeight: 500, marginBottom: '0.75rem' }}>
                   {lang === 'nl' ? 'Openingstijden' : 'Opening hours'}
@@ -63,14 +59,21 @@ export default function Contact() {
                 ))}
               </div>
 
-              {/* CTAs */}
               <div style={{ display: 'flex', flexDirection: 'column', gap: '0.6rem' }}>
                 <a href={`tel:${loc.tel}`} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.9rem 1.25rem', background: 'var(--green)', color: 'var(--cream)', textDecoration: 'none', borderRadius: '2px', fontSize: '0.82rem', fontWeight: 500, fontFamily: 'var(--font-inter), sans-serif' }}>
                   <span>{lang === 'nl' ? 'Bel direct' : 'Call now'}</span>
                   <span>→</span>
                 </a>
+
+                {loc.whatsapp && (
+                  <a href={`https://wa.me/${loc.whatsapp}`} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.9rem 1.25rem', background: '#25D366', color: '#fff', textDecoration: 'none', borderRadius: '2px', fontSize: '0.82rem', fontWeight: 500, fontFamily: 'var(--font-inter), sans-serif' }}>
+                    <span>{lang === 'nl' ? 'WhatsApp' : 'WhatsApp'}</span>
+                    <span>↗</span>
+                  </a>
+                )}
+
                 <a href={loc.maps} target="_blank" rel="noopener noreferrer" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0.9rem 1.25rem', background: 'transparent', color: 'var(--text-muted)', textDecoration: 'none', borderRadius: '2px', fontSize: '0.82rem', border: '1px solid var(--cream-dark)', fontFamily: 'var(--font-inter), sans-serif' }}>
-                  <span>{lang === 'nl' ? 'Google Maps' : 'Google Maps'}</span>
+                  <span>Google Maps</span>
                   <span>↗</span>
                 </a>
               </div>
