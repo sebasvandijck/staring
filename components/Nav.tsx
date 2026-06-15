@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import Image from 'next/image'
 
 const NAV_LINKS = [
   { href: '#reviews', nl: 'Reviews', en: 'Reviews' },
@@ -36,8 +35,8 @@ export default function Nav() {
       borderBottom: '1px solid rgba(30,51,37,0.06)',
       transition: 'background 0.3s',
     }}>
-      <a href="#" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
-        <Image src="/images/logo.png" alt="Staring Tailor & Dry Cleaning" width={140} height={40} style={{ objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(15%) sepia(30%) saturate(800%) hue-rotate(100deg) brightness(80%)' }} />
+      <a href="#" style={{ flexShrink: 0, textDecoration: 'none' }}>
+        <span style={{ fontFamily: 'var(--font-playfair), serif', fontSize: '1.05rem', fontWeight: 500, letterSpacing: '0.22em', textTransform: 'uppercase', color: 'var(--green)' }}>Staring</span>
       </a>
 
       <div style={{ display: 'flex', gap: '2.25rem' }} className="nav-links">
