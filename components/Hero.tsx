@@ -28,8 +28,8 @@ export default function Hero() {
       <div style={{
         position: 'absolute', inset: 0,
         background: `
-          linear-gradient(to top, rgba(8,16,10,0.96) 0%, rgba(8,16,10,0.72) 35%, rgba(8,16,10,0.40) 65%, rgba(8,16,10,0.18) 100%),
-          linear-gradient(to left, rgba(8,16,10,0.65) 0%, rgba(8,16,10,0.1) 60%, transparent 100%)
+          linear-gradient(to top, rgba(8,16,10,0.97) 0%, rgba(8,16,10,0.80) 30%, rgba(8,16,10,0.60) 60%, rgba(8,16,10,0.45) 100%),
+          linear-gradient(to left, rgba(8,16,10,0.55) 0%, rgba(8,16,10,0.1) 60%, transparent 100%)
         `,
       }} />
 
