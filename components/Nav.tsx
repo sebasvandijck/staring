@@ -147,7 +147,7 @@ export default function Nav() {
               fontSize: '0.9rem', fontWeight: 500,
             }}
           >
-            {lang === 'nl' ? '📞 Bel direct — 06 466 355 56' : '📞 Call now — 06 466 355 56'}
+            {lang === 'nl' ? 'Bel ons' : 'Call us'}
           </a>
         </div>
       )}
