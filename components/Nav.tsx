@@ -1,10 +1,12 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 
 const NAV_LINKS = [
   { href: '#reviews', nl: 'Reviews', en: 'Reviews' },
   { href: '#services', nl: 'Services', en: 'Services' },
+  { href: '#prijzen', nl: 'Prijzen', en: 'Pricing' },
   { href: '#contact', nl: 'Contact', en: 'Contact' },
 ]
 
@@ -34,18 +36,10 @@ export default function Nav() {
       borderBottom: '1px solid rgba(30,51,37,0.06)',
       transition: 'background 0.3s',
     }}>
-      {/* Logo */}
-      <a href="#" style={{
-        fontFamily: 'var(--font-playfair), serif',
-        fontSize: '1.05rem', fontWeight: 500,
-        letterSpacing: '0.22em', textTransform: 'uppercase',
-        color: 'var(--green)', textDecoration: 'none',
-        flexShrink: 0,
-      }}>
-        Staring
+      <a href="#" style={{ display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+        <Image src="/images/logo.png" alt="Staring Tailor & Dry Cleaning" width={140} height={40} style={{ objectFit: 'contain', filter: 'brightness(0) saturate(100%) invert(15%) sepia(30%) saturate(800%) hue-rotate(100deg) brightness(80%)' }} />
       </a>
 
-      {/* Section links — hidden on mobile */}
       <div style={{ display: 'flex', gap: '2.25rem' }} className="nav-links">
         {NAV_LINKS.map(link => (
           <a key={link.href} href={link.href} style={{
@@ -62,31 +56,22 @@ export default function Nav() {
         ))}
       </div>
 
-      {/* Right: lang + CTA */}
       <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexShrink: 0 }}>
-        <div style={{
-          display: 'flex', gap: '1px',
-          background: 'var(--cream-dark)', borderRadius: '2px', padding: '2px',
-        }}>
+        <div style={{ display: 'flex', gap: '1px', background: 'var(--cream-dark)', borderRadius: '2px', padding: '2px' }}>
           {(['nl', 'en'] as const).map(l => (
-            <button
-              key={l}
-              onClick={() => switchLang(l)}
-              style={{
-                fontFamily: 'var(--font-inter), sans-serif',
-                fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.1em',
-                padding: '4px 9px', border: 'none', borderRadius: '2px',
-                background: lang === l ? 'var(--green)' : 'transparent',
-                color: lang === l ? 'var(--cream)' : 'var(--text-muted)',
-                cursor: 'pointer', transition: 'all 0.15s',
-              }}
-            >
+            <button key={l} onClick={() => switchLang(l)} style={{
+              fontFamily: 'var(--font-inter), sans-serif',
+              fontSize: '0.68rem', fontWeight: 500, letterSpacing: '0.1em',
+              padding: '4px 9px', border: 'none', borderRadius: '2px',
+              background: lang === l ? 'var(--green)' : 'transparent',
+              color: lang === l ? 'var(--cream)' : 'var(--text-muted)',
+              cursor: 'pointer', transition: 'all 0.15s',
+            }}>
               {l.toUpperCase()}
             </button>
           ))}
         </div>
-
-        <a href="tel:0646635556" style={{
+        <a href="tel:0207750448" style={{
           fontFamily: 'var(--font-inter), sans-serif',
           fontSize: '0.78rem', fontWeight: 500, letterSpacing: '0.05em',
           color: 'var(--cream)', background: 'var(--green)',
