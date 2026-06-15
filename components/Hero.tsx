@@ -105,17 +105,23 @@ export default function Hero() {
             </a>
           </div>
 
-          <div style={{
+          <a href="#reviews" style={{
             display: 'flex', alignItems: 'center', gap: '0.75rem',
             paddingTop: '1.5rem',
             borderTop: '1px solid rgba(245,239,228,0.12)',
-          }}>
+            textDecoration: 'none',
+            transition: 'opacity 0.2s',
+          }}
+            onMouseEnter={e => (e.currentTarget.style.opacity = '0.75')}
+            onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
+          >
             <span style={{ color: 'var(--gold)', fontSize: '0.82rem', letterSpacing: '0.12em' }}>★★★★★</span>
             <span style={{ fontSize: '0.78rem', color: 'rgba(245,239,228,0.65)' }}>
               <strong style={{ color: 'rgba(245,239,228,0.85)', fontWeight: 500 }}>4,9</strong>{' '}
               {t.hero.rating[lang]}
             </span>
-          </div>
+            <span style={{ fontSize: '0.7rem', color: 'rgba(245,239,228,0.35)', marginLeft: '0.25rem' }}>↓</span>
+          </a>
         </div>
       </div>
 
