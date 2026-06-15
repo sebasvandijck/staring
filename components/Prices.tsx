@@ -1,11 +1,13 @@
 'use client'
 
+import { useState } from 'react'
 import { useLang } from './useLang'
 import { t } from '@/lib/translations'
 
 export default function Prices() {
   const lang = useLang()
   const p = t.prices
+  const [open, setOpen] = useState<number | null>(0)
 
   return (
     <section id="prijzen" style={{ padding: '8rem 3rem', background: 'var(--green)' }}>
@@ -25,7 +27,8 @@ export default function Prices() {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5px', background: 'rgba(245,239,228,0.08)', border: '1px solid rgba(245,239,228,0.08)', borderRadius: '4px', overflow: 'hidden' }} className="prices-grid">
+        {/* Desktop: grid */}
+        <div className="prices-desktop" style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '1.5px', background: 'rgba(245,239,228,0.08)', border: '1px solid rgba(245,239,228,0.08)', borderRadius: '4px', overflow: 'hidden' }}>
           {p.categories.map((cat, i) => (
             <div key={i} className={`reveal reveal-delay-${(i % 4) + 1}`} style={{
               padding: '2.5rem 2.25rem',
@@ -42,6 +45,35 @@ export default function Prices() {
                   <span style={{ fontSize: '0.85rem', color: 'var(--cream)', fontWeight: 400, flexShrink: 0, marginLeft: '1rem' }}>{item.price}</span>
                 </div>
               ))}
+            </div>
+          ))}
+        </div>
+
+        {/* Mobile: accordion */}
+        <div className="prices-mobile" style={{ display: 'none', flexDirection: 'column', gap: '1px', background: 'rgba(245,239,228,0.08)', border: '1px solid rgba(245,239,228,0.08)', borderRadius: '4px', overflow: 'hidden' }}>
+          {p.categories.map((cat, i) => (
+            <div key={i} style={{ background: 'rgba(245,239,228,0.03)' }}>
+              <button
+                onClick={() => setOpen(open === i ? null : i)}
+                style={{
+                  width: '100%', display: 'flex', justifyContent: 'space-between', alignItems: 'center',
+                  padding: '1.25rem 1.5rem', background: 'transparent', border: 'none',
+                  cursor: 'pointer', borderBottom: '1px solid rgba(245,239,228,0.08)',
+                }}
+              >
+                <span style={{ fontFamily: 'var(--font-playfair), serif', fontSize: '1rem', color: 'var(--gold)', fontWeight: 400 }}>{cat.name[lang]}</span>
+                <span style={{ color: 'rgba(245,239,228,0.5)', fontSize: '1.2rem', transition: 'transform 0.2s', transform: open === i ? 'rotate(45deg)' : 'none' }}>+</span>
+              </button>
+              {open === i && (
+                <div style={{ padding: '0.5rem 1.5rem 1.25rem' }}>
+                  {cat.items.map((item, j) => (
+                    <div key={j} style={{ display: 'flex', justifyContent: 'space-between', padding: '0.6rem 0', borderBottom: '1px solid rgba(245,239,228,0.06)' }}>
+                      <span style={{ fontSize: '0.85rem', color: 'rgba(245,239,228,0.65)', fontWeight: 300 }}>{item[lang]}</span>
+                      <span style={{ fontSize: '0.85rem', color: 'var(--cream)', fontWeight: 400, flexShrink: 0, marginLeft: '1rem' }}>{item.price}</span>
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
           ))}
         </div>

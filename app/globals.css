@@ -48,15 +48,33 @@ body {
 
 .strip-img:hover { transform: scale(1.04); }
 
-@media (max-width: 900px) {
+/* Mobile */
+@media (max-width: 700px) {
   .nav-links { display: none !important; }
+  .nav-cta { display: none !important; }
+  .hamburger { display: flex !important; }
+}
+
+@media (max-width: 900px) {
   .hero-content { grid-template-columns: 1fr !important; gap: 2.5rem !important; padding: 0 1.5rem 4rem !important; }
-  .highlights-grid { grid-template-columns: 1fr !important; }
-  .reviews-masonry { columns: 1 !important; }
+  .highlights-grid { grid-template-columns: 1fr 1fr !important; }
   .services-layout { grid-template-columns: 1fr !important; gap: 3rem !important; }
   .services-image { position: static !important; aspect-ratio: 16/9 !important; }
-  .photo-strip { grid-template-columns: 1fr !important; height: auto !important; }
-  .photo-strip > div { height: 55vw; }
-  .prices-grid { grid-template-columns: 1fr !important; }
+  .photo-strip { flex-direction: column !important; height: auto !important; }
+  .photo-strip > div { flex: none !important; height: 55vw; }
   .contact-grid { grid-template-columns: 1fr !important; }
+
+  /* Reviews */
+  .reviews-desktop { display: none !important; }
+  .reviews-mobile { display: block !important; }
+
+  /* Prices */
+  .prices-desktop { display: none !important; }
+  .prices-mobile { display: flex !important; }
+
+  section { padding: 4rem 1.25rem !important; }
+}
+
+@media (max-width: 500px) {
+  .highlights-grid { grid-template-columns: 1fr !important; }
 }
