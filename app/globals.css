@@ -1,0 +1,74 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --cream: #F5EFE4;
+  --cream-dark: #EAE0CF;
+  --green: #1E3325;
+  --green-mid: #2A4433;
+  --green-light: #3D5C47;
+  --gold: #C8A84B;
+  --gold-light: #D4B668;
+  --text: #1A1A17;
+  --text-muted: #756D5E;
+  --white: #FDFAF5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-inter), 'Inter', sans-serif;
+  background: var(--cream);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Gold line utility */
+.gold-line {
+  display: block;
+  width: 40px;
+  height: 1.5px;
+  background: var(--gold);
+  flex-shrink: 0;
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+
+/* Nav */
+@media (max-width: 700px) {
+  .nav-links { display: none !important; }
+}
+
+/* Photo strip */
+.strip-img:hover { transform: scale(1.03); }
+
+@media (max-width: 900px) {
+  .photo-strip { flex-direction: column !important; height: auto !important; }
+  .photo-strip > div { flex: none !important; height: 55vw; }
+  .hero-content { grid-template-columns: 1fr !important; gap: 2.5rem !important; padding: 0 1.5rem 4rem !important; }
+  .reviews-grid { grid-template-columns: 1fr !important; }
+  .services-layout { grid-template-columns: 1fr !important; gap: 3rem !important; }
+  .services-image { position: static !important; aspect-ratio: 16/9 !important; }
+  .contact-inner { grid-template-columns: 1fr !important; gap: 4rem !important; }
+}
